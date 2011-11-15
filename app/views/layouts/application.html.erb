@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Score-App | <%= @title %></title>
+    <title><%= title %></title>
     <%= csrf_meta_tag %>
+    <%= stylesheet_link_tag 'application' %>
+    <%= stylesheet_link_tag 'custom' %>
   </head>
   <body>
     <%= yield %>
