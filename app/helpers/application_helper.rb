@@ -2,7 +2,7 @@ module ApplicationHelper
 
   #logo helper
   def logo
-    logo = image_tag("logo.png", :alt => "Score-App", :class => "round")
+    image_tag("logo.png", :alt => "Score-App", :class => "round")
   end
 
   #return title on per page basis
