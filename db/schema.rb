@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111116010806) do
+ActiveRecord::Schema.define(:version => 20111116005427) do
 
   create_table "users", :force => true do |t|
     t.string   "name"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(:version => 20111116010806) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "encrypted_pasword"
-    t.string   "salt"
+    t.string   "password_digest"
   end
 
   add_index "users", ["handle"], :name => "index_users_on_handle", :unique => true
