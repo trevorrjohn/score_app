@@ -9,6 +9,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       flash[:sucess] = "Welcome back, thanks for loging in!"
       @user = user
+      sign_in @user
       redirect_to @user
     else
       flash.now[:error] = "Invalid email/password combination."
