@@ -18,8 +18,5 @@ class User < ActiveRecord::Base
 
   def has_password?(submitted_password)
     submitted_password == authenticate(submitted_password)
-=begin
-    encrypted_password == encrypt(submitted_password)
-=end
   end
 end
