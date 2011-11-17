@@ -7,6 +7,7 @@ gem 'rails', '3.1.1'
 
 group :development do
   gem 'sqlite3'
+  gem 'faker', '0.3.1'
 end
 
 group :production do
@@ -22,7 +23,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-
+gem 'will_paginate', '~> 3.0'
 gem 'jquery-rails'
 gem 'therubyracer'
 gem 'heroku'

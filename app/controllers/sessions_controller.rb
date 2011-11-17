@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+
   def new
     @title = "Sign in"
   end
@@ -10,7 +11,7 @@ class SessionsController < ApplicationController
       flash[:sucess] = "Welcome back, thanks for loging in!"
       @user = user
       sign_in @user
-      redirect_to @user
+      redirect_back_or user
     else
       flash.now[:error] = "Invalid email/password combination."
       @title = "Sign in"
