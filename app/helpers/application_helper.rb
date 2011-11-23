@@ -2,7 +2,7 @@ module ApplicationHelper
 
   #logo helper
   def logo
-    image_tag("logo.png", :alt => "Score-App", :class => "round")
+    image_tag("https://s3.amazonaws.com/score-app/logo.png", :alt => "Score-App", :class => "round")
   end
 
   #return title on per page basis

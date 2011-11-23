@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :scores
+
   attr_accessible :name, :email, :handle, :password, :password_confirmation
   has_secure_password
 
